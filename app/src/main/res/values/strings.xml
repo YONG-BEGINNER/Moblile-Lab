@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab 1</string>
+    <string name="my_first_application">My First Application !</string>
+    <string name="start">Start</string>
+</resources>
