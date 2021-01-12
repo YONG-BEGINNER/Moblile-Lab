@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#123e35"
     tools:context=".ui.main.MainFragment">
 
     <TextView
@@ -12,6 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/mainfragment"
+        android:textColor="#b3dbaa"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -23,20 +26,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="176dp"
+        android:background="#b3dbaa"
         android:ems="10"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
         android:inputType="numberDecimal"
+        android:textColor="#123e35"
+        android:textColorHighlight="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/convertButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="192dp"
-        android:text="@string/convert"
+        android:backgroundTint="#b3dbaa"
+        android:text="CONVERT TO RM"
+        android:textColor="#123e35"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -44,10 +53,28 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="163dp"
-        android:layout_height="19dp"
+        android:layout_width="180dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="146dp"
         android:text="Enter the value in USD"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="157dp" />
+        android:textColor="#b3dbaa"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/dollarText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="424dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/logo_transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
