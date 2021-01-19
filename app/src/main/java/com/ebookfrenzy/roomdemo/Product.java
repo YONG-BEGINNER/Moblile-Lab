@@ -13,12 +13,18 @@ public class Product {
     private int id;
     @ColumnInfo(name = "productName")
     private String name;
+    @ColumnInfo(name = "productQuantity")
     private int quantity;
-    public Product(String name, int quantity) {
+    @ColumnInfo(name = "productPrice")
+    private float price;
+
+    public Product(String name, int quantity, float price) {
         this.id = id;
         this.name = name;
         this.quantity = quantity;
+        this.price = price;
     }
+
     public int getId() {
         return this.id;
     }
@@ -28,6 +34,9 @@ public class Product {
     public int getQuantity() {
         return this.quantity;
     }
+    public float getPrice(){
+        return this.price;
+    }
     public void setId(int id) {
         this.id = id;
     }
@@ -36,5 +45,9 @@ public class Product {
     }
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public void setPrice(float price){
+        this.price = price;
     }
 }
