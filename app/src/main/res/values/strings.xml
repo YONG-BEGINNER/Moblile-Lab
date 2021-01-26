@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AlarmaApp</string>
+    <string name="button">Button</string>
+    <string name="start_counter">Start Counter</string>
+</resources>
